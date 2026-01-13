@@ -1,8 +1,3 @@
-This is a comprehensive, professional `README.md` template tailored specifically for **NetPulse**. It covers the technical achievements you mentioned (WSL compatibility, delta calculations) while maintaining a clean, accessible structure for other developers.
-
-You can copy-paste the code block below directly into your `README.md` file.
-
-```markdown
 # ⚡ NetPulse | Real-Time Server Monitoring SaaS
 
 ![NetPulse Dashboard](https://your-screenshot-url-here.png)
