@@ -24,3 +24,123 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* client/app/globals.css */
+
+/* Hide default cursor everywhere so your custom one shows */
+body, a, button, input, textarea, select {
+  cursor: none !important;
+}
+
+/* Re-enable default cursor for the Clerk Login Form specifically */
+/* (Otherwise you can't type in the inputs easily) */
+.cl-rootBox, .cl-card, .cl-formFieldInput {
+  cursor: text !important;
+}
+.cl-formButtonPrimary, .cl-footerActionLink {
+  cursor: pointer !important;
+}
+
+
+/* client/app/globals.css */
+
+/* Force Clerk Card Background */
+.cl-card {
+  background-color: #151e32 !important;
+  border: 1px solid #334155 !important;
+}
+
+/* Force Text Color */
+.cl-headerTitle, .cl-headerSubtitle, .cl-formFieldLabel {
+  color: white !important;
+}
+
+/* Force Input Background */
+.cl-formFieldInput {
+  background-color: #0f172a !important;
+  color: white !important;
+  border: 1px solid #334155 !important;
+}
+
+/* Primary Button */
+.cl-formButtonPrimary {
+  background-color: #06b6d4 !important;
+  color: black !important;
+}
+
+
+
+
+
+/* ... (Keep your existing cursor code) ... */
+
+/* --- FORCE FIX: GOOGLE BUTTON VISIBILITY --- */
+
+/* 1. Target the Social Button Container */
+button[class*="cl-socialButtonsBlockButton"] {
+  background-color: #1e293b !important; /* Slate-800 */
+  border: 1px solid #475569 !important; /* Slate-600 */
+  color: #ffffff !important;            /* Force White Text */
+}
+
+/* 2. Target the Text Span inside the button explicitly */
+button[class*="cl-socialButtonsBlockButton"] span,
+button[class*="cl-socialButtonsBlockButton"] p, 
+div[class*="cl-socialButtonsBlockButtonText"] {
+  color: #ffffff !important;
+}
+
+/* 3. Hover State */
+button[class*="cl-socialButtonsBlockButton"]:hover {
+  background-color: #334155 !important; /* Lighter Slate */
+}
+
+/* 4. Fix the "OR" Divider lines */
+div[class*="cl-dividerLine"] {
+  background-color: #475569 !important;
+}
+div[class*="cl-dividerText"] {
+  color: #94a3b8 !important;
+}
+
+/* client/app/globals.css */
+
+/* Webkit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1120; /* Your app background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155; /* Slate-700 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4; /* Cyan-500 on hover */
+}
+
+/* client/app/globals.css */
+
+/* Custom "Cyber" Scrollbar Class */
+.cyber-scrollbar::-webkit-scrollbar {
+  width: 6px !important; /* Slimmer width */
+}
+
+.cyber-scrollbar::-webkit-scrollbar-track {
+  background: #0f172a !important; /* Dark Slate background */
+}
+
+.cyber-scrollbar::-webkit-scrollbar-thumb {
+  background: #334155 !important; /* Slate-700 thumb */
+  border-radius: 10px !important;
+}
+
+.cyber-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4 !important; /* Cyan-500 hover effect */
+}
